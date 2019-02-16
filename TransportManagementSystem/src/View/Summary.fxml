@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SummaryController">
+    <children>
+        <Label layoutX="597.0" layoutY="14.0" text="Summary" textAlignment="CENTER" AnchorPane.topAnchor="5.0">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="divisionPenaltyChartButton" alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="57.0" minWidth="175.0" mnemonicParsing="false" onAction="#divisionPenaltyChartFunc" text="Penalty" textAlignment="CENTER" AnchorPane.leftAnchor="430.0" AnchorPane.topAnchor="55.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1172.0" layoutY="10.0" minWidth="175.0" mnemonicParsing="false" onAction="#backFunc" text="Home" textAlignment="CENTER" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="5.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <HBox layoutX="583.0" layoutY="346.0" prefHeight="560.0" prefWidth="1366.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <VBox prefHeight="560.0" prefWidth="683.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="683.0" text="Division Summary" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="divisionSummaryTable" prefHeight="520.0" prefWidth="683.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="560.0" prefWidth="683.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="683.0" text="Yearly Summary" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="yearlySummaryTable" prefHeight="520.0" prefWidth="683.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="68.0" minWidth="175.0" text="Division Charts:" textAlignment="CENTER" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="55.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="divisionLicenseChartButton" alignment="CENTER" contentDisplay="CENTER" layoutX="424.0" layoutY="67.0" minWidth="175.0" mnemonicParsing="false" onAction="#divisionLicenseChartFunc" text="License Service" textAlignment="CENTER" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="55.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="divisionVehicleChartButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1155.0" layoutY="79.0" minWidth="175.0" mnemonicParsing="false" onAction="#divisionVehicleChartFunc" text="Vehicle Service" textAlignment="CENTER" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="55.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="yearlyVehicleChartButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1165.0" layoutY="89.0" minWidth="175.0" mnemonicParsing="false" onAction="#yearlyVehicleChartFunc" text="Vehicle Service" textAlignment="CENTER" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="105.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="yearlyLicenseChartButton" alignment="CENTER" contentDisplay="CENTER" layoutX="434.0" layoutY="77.0" minWidth="175.0" mnemonicParsing="false" onAction="#yearlyLicenseChartFunc" text="License Service" textAlignment="CENTER" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="105.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="78.0" minWidth="175.0" text="Yearly Charts:" textAlignment="CENTER" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="yearlyPenaltyChartButton" alignment="CENTER" contentDisplay="CENTER" layoutX="424.0" layoutY="67.0" minWidth="175.0" mnemonicParsing="false" onAction="#yearlyPenaltyChartFunc" text="Penalty" textAlignment="CENTER" AnchorPane.leftAnchor="430.0" AnchorPane.topAnchor="105.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+    </children>
+
+</AnchorPane>

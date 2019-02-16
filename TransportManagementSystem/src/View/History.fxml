@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HistoryController">
+
+    <children>
+        <Label layoutX="640.0" layoutY="18.0" text="History" textAlignment="CENTER">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="vehicleHistoryButton" alignment="CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="85.0" minWidth="220.0" mnemonicParsing="false" onAction="#vehicleHistoryFunc" text="Vehicle Service History" textAlignment="CENTER" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="85.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="LicenseHistoryButton" alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="85.0" minWidth="220.0" mnemonicParsing="false" onAction="#LicenseHistoryFunc" text="License Service History" textAlignment="CENTER" AnchorPane.leftAnchor="316.0" AnchorPane.topAnchor="85.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <TableView fx:id="historyTable" layoutX="14.0" layoutY="177.0" maxWidth="1356.0" prefHeight="540.0" prefWidth="1360.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+        <Button fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1101.0" layoutY="81.0" minWidth="220.0" mnemonicParsing="false" onAction="#backFunc" text="Home" textAlignment="CENTER" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="85.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <Button fx:id="penaltyHistoryButton" alignment="CENTER" contentDisplay="CENTER" layoutX="578.0" layoutY="85.0" minWidth="220.0" mnemonicParsing="false" onAction="#penaltyHistoryFunc" text="Penalty History" textAlignment="CENTER" AnchorPane.leftAnchor="573.0" AnchorPane.topAnchor="85.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="addHistoryButton" alignment="CENTER" contentDisplay="CENTER" layoutX="833.0" layoutY="85.0" minWidth="220.0" mnemonicParsing="false" onAction="#addHistoryFunc" text="Add History" textAlignment="CENTER" AnchorPane.leftAnchor="829.0" AnchorPane.topAnchor="85.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+    </children>
+
+</AnchorPane>

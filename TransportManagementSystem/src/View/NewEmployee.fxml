@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewEmployeeController">
+    <children>
+        <Label layoutX="221.0" layoutY="6.0" text="New Employee">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="52.0" text="Employee ID:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="94.0" text="Name:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="173.0" text="Job Type:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="eidText" layoutX="185.0" layoutY="50.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="180.0" />
+        <TextField fx:id="nameText" layoutX="185.0" layoutY="92.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="180.0" />
+        <TextField fx:id="addressText" layoutX="186.0" layoutY="131.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="180.0" />
+        <Label layoutX="81.0" layoutY="133.0" text="Address:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="jobTypeText" layoutX="186.0" layoutY="171.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="180.0" />
+      <Label layoutX="80.0" layoutY="214.0" text="Birth Date:" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="birthDatePicker" layoutX="185.0" layoutY="212.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="180.0" />
+      <DatePicker fx:id="hireDatePicker" layoutX="185.0" layoutY="250.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="180.0" />
+      <Label layoutX="80.0" layoutY="252.0" text="Hire Date:" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="salaryText" layoutX="187.0" layoutY="295.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="180.0" />
+      <Label layoutX="81.0" layoutY="297.0" text="Salary:" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="339.0" text="Mobile No:" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mobileText" layoutX="187.0" layoutY="337.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="180.0" />
+      <TextField fx:id="divIDText" layoutX="187.0" layoutY="379.0" prefHeight="25.0" prefWidth="333.0" AnchorPane.leftAnchor="180.0" />
+      <Label layoutX="81.0" layoutY="381.0" text="Div ID:" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveButton" layoutX="174.0" layoutY="412.0" mnemonicParsing="false" onAction="#saveFunc" prefHeight="25.0" prefWidth="80.0" text="Save" AnchorPane.leftAnchor="180.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="closeButton" layoutX="433.0" layoutY="412.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>

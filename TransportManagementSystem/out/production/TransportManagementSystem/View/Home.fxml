@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <Button fx:id="serviceButton" layoutX="132.0" layoutY="253.0" mnemonicParsing="false" onAction="#serviceFunc" prefHeight="63.0" prefWidth="114.0" text="Services">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="employeesButton" layoutX="132.0" layoutY="406.0" mnemonicParsing="false" onAction="#employeesFunc" prefHeight="63.0" prefWidth="114.0" text="Employees">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="driverButton" layoutX="132.0" layoutY="550.0" mnemonicParsing="false" onAction="#driverFunc" prefHeight="63.0" prefWidth="114.0" text="Driver">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="penaltyButton" layoutX="389.0" layoutY="253.0" mnemonicParsing="false" onAction="#penaltyFunc" prefHeight="63.0" prefWidth="114.0" text="Penalty">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="ownerButton" layoutX="389.0" layoutY="406.0" mnemonicParsing="false" onAction="#ownerFunc" prefHeight="63.0" prefWidth="114.0" text="Owner">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="licenseButton" layoutX="389.0" layoutY="550.0" mnemonicParsing="false" onAction="#licenseFunc" prefHeight="63.0" prefWidth="114.0" text="License">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="historyButton" layoutX="637.0" layoutY="250.0" mnemonicParsing="false" onAction="#historyFunction" prefHeight="63.0" prefWidth="114.0" text="History">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="vehicleButton" layoutX="634.0" layoutY="410.0" mnemonicParsing="false" onAction="#vehicleFunc" prefHeight="63.0" prefWidth="114.0" text="Vehicle">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="applicationButton" layoutX="632.0" layoutY="552.0" mnemonicParsing="false" onAction="#applicationFunc" prefHeight="63.0" prefWidth="118.0" text="License Application">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="paymentButton" layoutX="871.0" layoutY="255.0" mnemonicParsing="false" onAction="#paymentFunc" prefHeight="63.0" prefWidth="114.0" text="Payment">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="publicTransportButton" layoutX="866.0" layoutY="406.0" mnemonicParsing="false" onAction="#publicTransportFunc" prefHeight="63.0" prefWidth="114.0" text="Public Transport">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="aboutButton" layoutX="866.0" layoutY="550.0" mnemonicParsing="false" onAction="#aboutFunc" prefHeight="63.0" prefWidth="114.0" text="About ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="summaryButton" layoutX="1104.0" layoutY="253.0" mnemonicParsing="false" onAction="#summaryFunc" prefHeight="63.0" prefWidth="114.0" text="Summary">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="reportButton" layoutX="1104.0" layoutY="406.0" mnemonicParsing="false" onAction="#reportFunc" prefHeight="63.0" prefWidth="114.0" text="Report">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="logOutButton" layoutX="1104.0" layoutY="550.0" mnemonicParsing="false" onAction="#logOutFunc" prefHeight="63.0" prefWidth="114.0" text="Log Out" textFill="RED">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="message1" alignment="CENTER" layoutX="91.0" layoutY="4.0" prefHeight="94.0" prefWidth="1200.0" textAlignment="CENTER" textFill="BLUE" underline="true" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

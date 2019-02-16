@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EmployeeController">
+<children>
+    <Label layoutX="623.0" layoutY="-3.0" text="Employees" textAlignment="CENTER">
+        <font>
+            <Font size="32.0" />
+        </font>
+    </Label>
+    <Button fx:id="insertButton" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="85.0" minWidth="175.0" mnemonicParsing="false" onAction="#insertFunc" text="New Employee" textAlignment="CENTER" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="60.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button fx:id="updateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="348.0" layoutY="85.0" minWidth="175.0" mnemonicParsing="false" onAction="#updateFunc" text="Update Employee" textAlignment="CENTER" AnchorPane.leftAnchor="348.0" AnchorPane.topAnchor="60.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button fx:id="deleteButton" alignment="CENTER" contentDisplay="CENTER" layoutX="596.0" layoutY="85.0" minWidth="175.0" mnemonicParsing="false" onAction="#deleteFunc" text="Delete  Employee" textAlignment="CENTER" AnchorPane.leftAnchor="596.0" AnchorPane.topAnchor="60.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <TableView fx:id="employeeTable" layoutX="14.0" layoutY="177.0" maxWidth="1356.0" prefHeight="472.0" prefWidth="1356.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <Button fx:id="increaseSalaryButton" alignment="CENTER" contentDisplay="CENTER" layoutX="843.0" layoutY="85.0" minWidth="175.0" mnemonicParsing="false" onAction="#increaseSalaryFunc" text="Incease Salary" textAlignment="CENTER" AnchorPane.leftAnchor="843.0" AnchorPane.topAnchor="60.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1091.0" layoutY="85.0" minWidth="175.0" mnemonicParsing="false" onAction="#backFunc" text="Home" textAlignment="CENTER" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="60.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="allEmployeesButton" alignment="CENTER" contentDisplay="CENTER" layoutX="99.0" layoutY="137.0" minWidth="175.0" mnemonicParsing="false" onAction="#allEmployeesFunc" text="All Employees" textAlignment="CENTER" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchField" layoutX="347.0" layoutY="136.0" minWidth="175.0" prefHeight="41.0" prefWidth="429.0" AnchorPane.topAnchor="120.0" />
+      <Button fx:id="searchByIDButton" alignment="CENTER" contentDisplay="CENTER" layoutX="843.0" layoutY="141.0" minWidth="175.0" mnemonicParsing="false" onAction="#searchByIDFunc" text="Search by ID" textAlignment="CENTER" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchByNameButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1089.0" layoutY="141.0" minWidth="175.0" mnemonicParsing="false" onAction="#searchByNameFunc" text="Search by Name" textAlignment="CENTER" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="94.0" layoutY="177.0" prefHeight="43.0" prefWidth="180.0" text="From:" textAlignment="CENTER" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fromText" layoutX="346.0" layoutY="181.0" minWidth="175.0" prefHeight="41.0" prefWidth="175.0" AnchorPane.topAnchor="180.0" />
+      <Label alignment="CENTER" layoutX="594.0" layoutY="184.0" prefHeight="43.0" prefWidth="180.0" text="To:" textAlignment="CENTER" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="toText" layoutX="844.0" layoutY="180.0" minWidth="175.0" prefHeight="41.0" prefWidth="175.0" AnchorPane.topAnchor="180.0" />
+      <Button fx:id="filterButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1087.0" layoutY="180.0" minWidth="175.0" mnemonicParsing="false" onAction="#filterFunc" text="Filter by Salary" textAlignment="CENTER" AnchorPane.topAnchor="180.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+</children>
+</AnchorPane>

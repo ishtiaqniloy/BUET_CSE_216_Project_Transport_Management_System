@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewPaymentController">
+
+    <children>
+        <Label layoutX="181.0" layoutY="21.0" text="New Payment Entry">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="183.0" text="History No:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="223.0" text="Name: " AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="263.0" text="Amount:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="historyNoText" layoutX="191.0" layoutY="181.0" prefHeight="25.0" prefWidth="208.0" AnchorPane.leftAnchor="191.0" />
+        <TextField fx:id="nameText" layoutX="191.0" layoutY="221.0" prefHeight="25.0" prefWidth="327.0" AnchorPane.leftAnchor="191.0" />
+        <TextField fx:id="amountText" layoutX="191.0" layoutY="261.0" prefHeight="25.0" prefWidth="327.0" AnchorPane.leftAnchor="191.0" />
+        <Button fx:id="saveButton" layoutX="169.0" layoutY="343.0" mnemonicParsing="false" onAction="#saveFunc" prefHeight="25.0" prefWidth="80.0" text="Save">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Button fx:id="closeButton" layoutX="438.0" layoutY="343.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Label layoutX="75.0" layoutY="135.0" text="Payment No:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="paymentNoText" layoutX="192.0" layoutY="133.0" prefHeight="25.0" prefWidth="327.0" />
+        <Button fx:id="findButton" layoutX="438.0" layoutY="181.0" mnemonicParsing="false" onAction="#findFunc" prefHeight="25.0" prefWidth="80.0" text="Find">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <TextField fx:id="statusText" layoutX="192.0" layoutY="300.0" prefHeight="25.0" prefWidth="327.0" />
+      <Label layoutX="81.0" layoutY="302.0" text="Current Status:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

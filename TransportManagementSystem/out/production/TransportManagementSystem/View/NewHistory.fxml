@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewHistoryController">
+
+    <children>
+        <Label layoutX="205.0" layoutY="22.0" text="New History Entry">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="136.0" text="ID : " AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="176.0" text="Name: " AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="216.0" text="Amount:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="idText" layoutX="169.0" layoutY="134.0" prefHeight="25.0" prefWidth="230.0" AnchorPane.leftAnchor="169.0" />
+        <TextField fx:id="nameText" layoutX="169.0" layoutY="174.0" prefHeight="25.0" prefWidth="349.0" AnchorPane.leftAnchor="169.0" />
+        <TextField fx:id="amountText" layoutX="169.0" layoutY="214.0" prefHeight="25.0" prefWidth="349.0" AnchorPane.leftAnchor="169.0" />
+        <MenuButton fx:id="typeMenu" layoutX="74.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Type" AnchorPane.leftAnchor="80.0">
+            <items>
+                <MenuItem fx:id="licenseHistoryItem" mnemonicParsing="false" onAction="#selectLicenseHistoryFunc" text="Licence Service" />
+                <MenuItem fx:id="vehicleHistoryItem" mnemonicParsing="false" onAction="#selectVehicleHistoryFunc" text="Vehicle Service" />
+            <MenuItem fx:id="penaltyHistoryItem" mnemonicParsing="false" onAction="#selectPenaltyHistoryFunc" text="Penalty" />
+            </items>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </MenuButton>
+        <Button fx:id="saveButton" layoutX="260.0" layoutY="355.0" mnemonicParsing="false" onAction="#saveFunc" prefHeight="25.0" prefWidth="80.0" text="Save">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Button fx:id="closeButton" layoutX="438.0" layoutY="355.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+      <Label layoutX="252.0" layoutY="75.0" text="Entry No:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="entryNoText" layoutX="328.0" layoutY="73.0" prefHeight="25.0" prefWidth="190.0" />
+      <TextField fx:id="vehicleRegNoText" layoutX="170.0" layoutY="257.0" prefHeight="25.0" prefWidth="349.0" />
+      <Label layoutX="81.0" layoutY="259.0" text="Vehicle Reg:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="305.0" text="License No:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="licenseNoText" layoutX="170.0" layoutY="303.0" prefHeight="25.0" prefWidth="349.0" />
+      <Button fx:id="findButton" layoutX="438.0" layoutY="134.0" mnemonicParsing="false" onAction="#findFunc" prefHeight="25.0" prefWidth="80.0" text="Find">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+
+</AnchorPane>

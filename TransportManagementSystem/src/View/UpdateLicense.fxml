@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateLicenseController">
+
+    <children>
+        <Label layoutX="227.0" layoutY="21.0" text="Update License">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="105.0" text="License No:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="145.0" text="Driver NID:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="licenseNoText" layoutX="179.0" layoutY="103.0" prefHeight="25.0" prefWidth="246.0" AnchorPane.leftAnchor="180.0" />
+        <TextField fx:id="driverNIDText" layoutX="179.0" layoutY="143.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="180.0" />
+        <TextField fx:id="divIDText" layoutX="190.0" layoutY="306.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="180.0" />
+        <Label layoutX="79.0" layoutY="308.0" text="Division:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="79.0" layoutY="266.0" text="Type:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="typeText" layoutX="190.0" layoutY="264.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="180.0" />
+        <Label layoutX="81.0" layoutY="348.0" text="Status:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="statusText" layoutX="190.0" layoutY="346.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="180.0" />
+        <Button fx:id="saveButton" layoutX="177.0" layoutY="396.0" mnemonicParsing="false" onAction="#saveFunc" prefHeight="25.0" prefWidth="80.0" text="Save" AnchorPane.leftAnchor="180.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="closeButton" layoutX="437.0" layoutY="396.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close" AnchorPane.rightAnchor="83.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="findButton" layoutX="439.0" layoutY="102.0" mnemonicParsing="false" onAction="#findFunc" prefHeight="25.0" prefWidth="80.0" text="Find" AnchorPane.rightAnchor="81.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label layoutX="79.0" layoutY="184.0" text="Issue Date:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="issueDatePicker" layoutX="190.0" layoutY="182.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="180.0" />
+      <DatePicker fx:id="validityDatePicker" layoutX="190.0" layoutY="224.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="180.0" />
+      <Label layoutX="85.0" layoutY="226.0" text="Validity Date:" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

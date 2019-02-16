@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TransportManagementSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TransportManagementSystem_jar</output-path>
+    <root id="archive" name="TransportManagementSystem.jar">
+      <element id="module-output" name="TransportManagementSystem" />
+      <element id="extracted-dir" path="D:/Oracle/ojdbc6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Oracle/ojdbc6.jar" path-in-jar="/oracle/jdbc/driver/" />
+    </root>
+  </artifact>
+</component>

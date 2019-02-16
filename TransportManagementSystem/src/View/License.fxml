@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LicenseController">
+
+    <children>
+        <Label layoutX="626.0" layoutY="10.0" text="Licenses" textAlignment="CENTER" AnchorPane.topAnchor="10.0">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <TableView fx:id="licenseTable" layoutX="14.0" layoutY="177.0" maxWidth="1356.0" prefHeight="520.0" prefWidth="1356.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+        <Button fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1092.0" layoutY="90.0" minWidth="175.0" mnemonicParsing="false" onAction="#backFunc" text="Home" textAlignment="CENTER" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="62.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <Button fx:id="viewReportButton" alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="90.0" minWidth="175.0" mnemonicParsing="false" onAction="#viewReportFunc" text="License Report" textAlignment="CENTER" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="575.0" layoutY="90.0" minWidth="175.0" mnemonicParsing="false" onAction="#updateFunc" text="Update License Info" textAlignment="CENTER" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="62.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="allButton" alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="100.0" minWidth="175.0" mnemonicParsing="false" onAction="#allFunc" text="All Licenses" textAlignment="CENTER" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="62.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="suspendedButton" alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="110.0" minWidth="175.0" mnemonicParsing="false" onAction="#suspendedFunc" text="Suspended Licenses" textAlignment="CENTER" AnchorPane.leftAnchor="430.0" AnchorPane.topAnchor="62.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchField" layoutX="194.0" layoutY="137.0" minHeight="39.0" minWidth="175.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="120.0" />
+      <Button fx:id="searchByTypeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="756.0" layoutY="120.0" minWidth="175.0" mnemonicParsing="false" onAction="#searchByTypeFunc" text="Search by Type" textAlignment="CENTER" AnchorPane.rightAnchor="435.0" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchByLicenseNoButton" alignment="CENTER" contentDisplay="CENTER" layoutX="425.0" layoutY="120.0" minWidth="175.0" mnemonicParsing="false" onAction="#searchByLicenseNoFunc" text="Search by License No" textAlignment="CENTER" AnchorPane.leftAnchor="425.0" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

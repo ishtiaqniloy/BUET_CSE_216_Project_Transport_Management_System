@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewPublicTransportController">
+    <children>
+        <Label layoutX="145.0" layoutY="14.0" text="New Public Transport Vehicle">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="136.0" text="Name:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="176.0" text="Route: " AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="314.0" text="Fare:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameText" layoutX="160.0" layoutY="134.0" prefHeight="25.0" prefWidth="256.0" AnchorPane.leftAnchor="160.0" />
+        <TextField fx:id="routeText" disable="true" editable="false" layoutX="160.0" layoutY="174.0" prefHeight="123.0" prefWidth="360.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="80.0" />
+        <TextField fx:id="fareText" disable="true" editable="false" layoutX="160.0" layoutY="312.0" prefHeight="25.0" prefWidth="358.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="80.0" />
+        <Button fx:id="findButton" layoutX="438.0" layoutY="134.0" mnemonicParsing="false" onAction="#findFunc" prefHeight="25.0" prefWidth="80.0" text="Find" AnchorPane.rightAnchor="80.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="saveButton" layoutX="160.0" layoutY="352.0" mnemonicParsing="false" onAction="#saveFunc" prefHeight="25.0" prefWidth="80.0" text="Save">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="closeButton" layoutX="440.0" layoutY="352.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close" AnchorPane.rightAnchor="80.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <TextField fx:id="regNoText" layoutX="160.0" layoutY="87.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="80.0" layoutY="89.0" text="Reg No:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="verifyButton" layoutX="440.0" layoutY="87.0" mnemonicParsing="false" onAction="#verifyFunc" prefHeight="25.0" prefWidth="80.0" text="Verify">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>

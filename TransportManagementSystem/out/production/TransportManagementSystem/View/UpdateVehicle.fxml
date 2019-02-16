@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateVehicleController">
+
+    <children>
+        <Label layoutX="231.0" layoutY="21.0" text="Update Vehicle">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="105.0" text="Reg No:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="145.0" text="Owner NID:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="325.0" layoutY="184.0" text="Type:" AnchorPane.leftAnchor="325.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="regNoText" layoutX="179.0" layoutY="103.0" prefHeight="25.0" prefWidth="237.0" AnchorPane.leftAnchor="180.0" />
+        <TextField fx:id="ownerNIDText" layoutX="179.0" layoutY="143.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="180.0" />
+        <TextField fx:id="modelText" layoutX="179.0" layoutY="182.0" prefHeight="25.0" prefWidth="131.0" AnchorPane.leftAnchor="180.0" />
+        <Label layoutX="81.0" layoutY="184.0" text="Model:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="typeText" layoutX="387.0" layoutY="182.0" prefHeight="25.0" prefWidth="131.0" AnchorPane.leftAnchor="387.0" />
+        <Label layoutX="79.0" layoutY="222.0" text="Engine CC:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="engineCCText" layoutX="179.0" layoutY="220.0" prefHeight="25.0" prefWidth="131.0" AnchorPane.leftAnchor="180.0" />
+        <TextField fx:id="seatsText" layoutX="387.0" layoutY="220.0" prefHeight="25.0" prefWidth="131.0" AnchorPane.leftAnchor="387.0" />
+        <Label layoutX="327.0" layoutY="222.0" text="Seats:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="329.0" layoutY="261.0" text="Weight:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="weightText" layoutX="389.0" layoutY="259.0" prefHeight="25.0" prefWidth="131.0" />
+        <TextField fx:id="tireSizeText" layoutX="181.0" layoutY="259.0" prefHeight="25.0" prefWidth="131.0" AnchorPane.leftAnchor="180.0" />
+        <Label layoutX="81.0" layoutY="261.0" text="Tire Size:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="302.0" text="Transmission:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="transmissionText" layoutX="181.0" layoutY="300.0" prefHeight="25.0" prefWidth="131.0" AnchorPane.leftAnchor="180.0" />
+        <TextField fx:id="divisionText" layoutX="389.0" layoutY="300.0" prefHeight="25.0" prefWidth="131.0" />
+        <Label layoutX="329.0" layoutY="302.0" text="Division:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="saveButton" layoutX="181.0" layoutY="364.0" mnemonicParsing="false" onAction="#saveFunc" prefHeight="25.0" prefWidth="80.0" text="Save" AnchorPane.leftAnchor="180.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="closeButton" layoutX="440.0" layoutY="364.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Button fx:id="findButton" layoutX="438.0" layoutY="103.0" mnemonicParsing="false" onAction="#findFunc" prefHeight="25.0" prefWidth="80.0" text="Find">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ServiceController">
+   <children>
+      <Label layoutX="597.0" layoutY="23.0" text="All Services" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="insertButton" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="94.0" minWidth="175.0" mnemonicParsing="false" onAction="#insertFunc" text="Insert New Service" textAlignment="CENTER" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="updateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="587.0" layoutY="93.0" minWidth="175.0" mnemonicParsing="false" onAction="#updateFunc" text="Update Service" textAlignment="CENTER" AnchorPane.leftAnchor="587.0" AnchorPane.topAnchor="93.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="serviceTable" layoutX="14.0" layoutY="177.0" maxWidth="1356.0" prefHeight="540.0" prefWidth="1360.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <Button fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1130.0" layoutY="85.0" minWidth="175.0" mnemonicParsing="false" onAction="#backFunc" text="Home" textAlignment="CENTER" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="85.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+DROP TABLE TRANSPORTMANAGEMENT.PUBLICTRANSPORT;
+CREATE TABLE TRANSPORTMANAGEMENT.PublicTransport (
+Vehicle_Reg_No NUMBER NOT NULL ,
+Name VARCHAR2(255) NOT NULL,
+Route VARCHAR2(1023 BYTE) NOT NULL ,
+Fare_Per_Km NUMBER NOT NULL
+)
+LOGGING
+NOCOMPRESS
+NOCACHE
+
+;
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10960', 'Anabil', 'Sign Board,Shonir Akhra,Jatrabari,Sayedabad,Mugdapara,Basabo,Khilgaon,Malibagh,Rampura,Merul,Badda,Airport', '21.17');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10206', 'Anabil', 'Sign Board,Shonir Akhra,Jatrabari,Sayedabad,Mugdapara,Basabo,Khilgaon,Malibagh,Rampura,Merul,Badda,Airport', '21.17');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10214', 'Anabil', 'Sign Board,Shonir Akhra,Jatrabari,Sayedabad,Mugdapara,Basabo,Khilgaon,Malibagh,Rampura,Merul,Badda,Airport', '21.17');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10238', 'Anabil', 'Sign Board,Shonir Akhra,Jatrabari,Sayedabad,Mugdapara,Basabo,Khilgaon,Malibagh,Rampura,Merul,Badda,Airport', '21.17');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10153', 'Anabil', 'Sign Board,Shonir Akhra,Jatrabari,Sayedabad,Mugdapara,Basabo,Khilgaon,Malibagh,Rampura,Merul,Badda,Airport', '21.17');
+
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10139', 'Bihanga Paribahan', 'Duaripara,Pallabi,Purobi,Mirpur11,Mirpur10,Kazipara,Shewrapara,Taltola,Agargaon,Khamarbari,Farmgate,Kawran Bazar,Bangla Motor,Shahbag,Motso Babhan,High Court,Press Club', '13.50');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10245', 'Bihanga Paribahan', 'Duaripara,Pallabi,Purobi,Mirpur11,Mirpur10,Kazipara,Shewrapara,Taltola,Agargaon,Khamarbari,Farmgate,Kawran Bazar,Bangla Motor,Shahbag,Motso Babhan,High Court,Press Club', '13.50');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10097', 'Bihanga Paribahan', 'Duaripara,Pallabi,Purobi,Mirpur11,Mirpur10,Kazipara,Shewrapara,Taltola,Agargaon,Khamarbari,Farmgate,Kawran Bazar,Bangla Motor,Shahbag,Motso Babhan,High Court,Press Club', '13.50');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10118', 'Bihanga Paribahan', 'Duaripara,Pallabi,Purobi,Mirpur11,Mirpur10,Kazipara,Shewrapara,Taltola,Agargaon,Khamarbari,Farmgate,Kawran Bazar,Bangla Motor,Shahbag,Motso Babhan,High Court,Press Club', '13.50');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10132', 'Bihanga Paribahan', 'Duaripara,Pallabi,Purobi,Mirpur11,Mirpur10,Kazipara,Shewrapara,Taltola,Agargaon,Khamarbari,Farmgate,Kawran Bazar,Bangla Motor,Shahbag,Motso Babhan,High Court,Press Club', '13.50');
+
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10154', 'Champion', 'Vashantek,Mirpur14,Mirpur10,Mirpur2,Sony Hall,Mirpur1,Ansar Camp,Technical,Gabtoli', '25.75');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10303', 'Champion', 'Vashantek,Mirpur14,Mirpur10,Mirpur2,Sony Hall,Mirpur1,Ansar Camp,Technical,Gabtoli', '25.75');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10312', 'Champion', 'Vashantek,Mirpur14,Mirpur10,Mirpur2,Sony Hall,Mirpur1,Ansar Camp,Technical,Gabtoli', '25.75');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10264', 'Champion', 'Vashantek,Mirpur14,Mirpur10,Mirpur2,Sony Hall,Mirpur1,Ansar Camp,Technical,Gabtoli', '25.75');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10290', 'Champion', 'Vashantek,Mirpur14,Mirpur10,Mirpur2,Sony Hall,Mirpur1,Ansar Camp,Technical,Gabtoli', '25.75');
+
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10314', 'Raja City', 'Mohammadpur,Shankar,Star Kabab,Dhanmondi15,Jigatola,City College,Science Lab,Bata Signal,Shahbag,Motso Babhan,High Court,Press Club,Paltan,GPO,Gulistan,Motijheel,Arambagh', '14.50');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10322', 'Raja City', 'Mohammadpur,Shankar,Star Kabab,Dhanmondi15,Jigatola,City College,Science Lab,Bata Signal,Shahbag,Motso Babhan,High Court,Press Club,Paltan,GPO,Gulistan,Motijheel,Arambagh', '14.50');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10323', 'Raja City', 'Mohammadpur,Shankar,Star Kabab,Dhanmondi15,Jigatola,City College,Science Lab,Bata Signal,Shahbag,Motso Babhan,High Court,Press Club,Paltan,GPO,Gulistan,Motijheel,Arambagh', '14.50');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10324', 'Raja City', 'Mohammadpur,Shankar,Star Kabab,Dhanmondi15,Jigatola,City College,Science Lab,Bata Signal,Shahbag,Motso Babhan,High Court,Press Club,Paltan,GPO,Gulistan,Motijheel,Arambagh', '14.50');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10327', 'Raja City', 'Mohammadpur,Shankar,Star Kabab,Dhanmondi15,Jigatola,City College,Science Lab,Bata Signal,Shahbag,Motso Babhan,High Court,Press Club,Paltan,GPO,Gulistan,Motijheel,Arambagh', '14.50');
+
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10328', 'Winner', 'Azimpur,Nilkhet,New Market,City College,Kolabagan,Panthapath,Kawran Bazar,Bot Tola,Nabisco,Mohakhali,Wireless Gate,Gulshan1,Badda,Uttar Badda,Shahjadpur,Bashtola,Nadda,Bashundhara', '20.60');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10332', 'Winner', 'Azimpur,Nilkhet,New Market,City College,Kolabagan,Panthapath,Kawran Bazar,Bot Tola,Nabisco,Mohakhali,Wireless Gate,Gulshan1,Badda,Uttar Badda,Shahjadpur,Bashtola,Nadda,Bashundhara', '20.60');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10335', 'Winner', 'Azimpur,Nilkhet,New Market,City College,Kolabagan,Panthapath,Kawran Bazar,Bot Tola,Nabisco,Mohakhali,Wireless Gate,Gulshan1,Badda,Uttar Badda,Shahjadpur,Bashtola,Nadda,Bashundhara', '20.60');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10346', 'Winner', 'Azimpur,Nilkhet,New Market,City College,Kolabagan,Panthapath,Kawran Bazar,Bot Tola,Nabisco,Mohakhali,Wireless Gate,Gulshan1,Badda,Uttar Badda,Shahjadpur,Bashtola,Nadda,Bashundhara', '20.60');
+INSERT INTO TRANSPORTMANAGEMENT.PublicTransport VALUES ('10344', 'Winner', 'Azimpur,Nilkhet,New Market,City College,Kolabagan,Panthapath,Kawran Bazar,Bot Tola,Nabisco,Mohakhali,Wireless Gate,Gulshan1,Badda,Uttar Badda,Shahjadpur,Bashtola,Nadda,Bashundhara', '20.60');
+-- ----------------------------
+-- Indexes structure for table PublicTransport
+-- ----------------------------
+
+-- ----------------------------
+-- Checks structure for table PublicTransport
+-- ----------------------------
+ALTER TABLE TRANSPORTMANAGEMENT.PublicTransport ADD CHECK (Vehicle_Reg_No IS NOT NULL);
+ALTER TABLE TRANSPORTMANAGEMENT.PublicTransport ADD CHECK (Route IS NOT NULL);
+ALTER TABLE TRANSPORTMANAGEMENT.PublicTransport ADD CHECK (Fare_Per_Km IS NOT NULL);
+ALTER TABLE TRANSPORTMANAGEMENT.PublicTransport ADD CHECK (Name IS NOT NULL);
+-- ----------------------------
+-- Primary Key structure for table PublicTransport
+-- ----------------------------
+ALTER TABLE TRANSPORTMANAGEMENT.PublicTransport ADD PRIMARY KEY (Vehicle_Reg_No);
+
+-- ----------------------------
+-- Foreign Key structure for table TRANSPORTMANAGEMENT.PublicTransport
+-- ----------------------------
+ALTER TABLE TRANSPORTMANAGEMENT.PublicTransport ADD FOREIGN KEY (Vehicle_Reg_No) REFERENCES TRANSPORTMANAGEMENT.Vehicle (Reg_No) ON DELETE SET NULL;
+
+DECLARE 
+BEGIN 
+	FOR R IN (SELECT * from PUBLICTRANSPORT)
+	loop
+		UPDATE VEHICLE V
+		SET TYPE = 'Bus'
+		WHERE V.REG_NO = R.VEHICLE_REG_NO;
+	end loop;
+end;
+		
+SELECT p.VEHICLE_REG_NO, v.TYPE
+FROM PUBLICTRANSPORT P join VEHICLE V on (p.VEHICLE_REG_NO = v.REG_NO);

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IncreaseSalaryController">
+
+    <children>
+        <Label layoutX="222.0" layoutY="31.0" text="Increase Salary">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="136.0" text="More Senior Percentage:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="176.0" text="Less Senior Percentage:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="percentage1Text" layoutX="261.0" layoutY="134.0" prefHeight="25.0" prefWidth="257.0" AnchorPane.leftAnchor="261.0" />
+        <TextField fx:id="percentage2Text" layoutX="261.0" layoutY="174.0" prefHeight="25.0" prefWidth="257.0" AnchorPane.leftAnchor="261.0" />
+        <Button fx:id="increaseButton" layoutX="80.0" layoutY="293.0" mnemonicParsing="false" onAction="#increaseFunc" prefHeight="25.0" prefWidth="80.0" text="Increase">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Button fx:id="closeButton" layoutX="438.0" layoutY="293.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+    </children>
+
+</AnchorPane>

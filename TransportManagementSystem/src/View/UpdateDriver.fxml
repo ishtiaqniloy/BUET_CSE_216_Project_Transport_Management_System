@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateDriverController">
+    <children>
+        <Label layoutX="225.0" layoutY="9.0" text="Update Driver">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="105.0" text="License No:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="145.0" text="Name:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="licenseNoText" layoutX="179.0" layoutY="103.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="190.0" />
+        <TextField fx:id="nameText" layoutX="179.0" layoutY="143.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="190.0" />
+        <TextField fx:id="fathersNameText" layoutX="179.0" layoutY="182.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="190.0" />
+        <Label layoutX="81.0" layoutY="184.0" text="Father's Name:" AnchorPane.leftAnchor="79.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="79.0" layoutY="222.0" text="Address:" AnchorPane.leftAnchor="79.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="addressText" layoutX="179.0" layoutY="220.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="190.0" />
+        <TextField fx:id="bloodGroupText" layoutX="190.0" layoutY="305.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="190.0" />
+        <Label layoutX="81.0" layoutY="307.0" text="Blood Group:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="348.0" text="Mobile No:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="mobileNoText" layoutX="190.0" layoutY="346.0" prefHeight="25.0" prefWidth="339.0" AnchorPane.leftAnchor="190.0" />
+        <Button fx:id="saveButton" layoutX="190.0" layoutY="396.0" mnemonicParsing="false" onAction="#saveFunc" prefHeight="25.0" prefWidth="80.0" text="Save" AnchorPane.leftAnchor="190.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="closeButton" layoutX="449.0" layoutY="396.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close" AnchorPane.rightAnchor="71.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="findButton" layoutX="448.0" layoutY="63.0" mnemonicParsing="false" onAction="#findFunc" prefHeight="25.0" prefWidth="80.0" text="Find" AnchorPane.rightAnchor="71.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <TextField fx:id="nidText" layoutX="180.0" layoutY="63.0" prefHeight="25.0" prefWidth="237.0" AnchorPane.leftAnchor="190.0" />
+      <Label layoutX="81.0" layoutY="65.0" text="NID:" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="264.0" text="Birth date:" AnchorPane.leftAnchor="79.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="birthDatePicker" layoutX="190.0" layoutY="262.0" prefHeight="25.0" prefWidth="339.0" />
+    </children>
+
+</AnchorPane>

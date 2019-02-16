@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewServiceController">
+   <children>
+      <Label layoutX="235.0" layoutY="28.0" text="New Service">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="136.0" text="SID : " AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="176.0" text="Name: " AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="216.0" text="Fee: " AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sidText" layoutX="160.0" layoutY="134.0" prefHeight="25.0" prefWidth="358.0" AnchorPane.leftAnchor="160.0" />
+      <TextField fx:id="nameText" layoutX="160.0" layoutY="174.0" prefHeight="25.0" prefWidth="358.0" AnchorPane.leftAnchor="160.0" />
+      <TextField fx:id="feeText" layoutX="160.0" layoutY="214.0" prefHeight="25.0" prefWidth="358.0" AnchorPane.leftAnchor="160.0" />
+      <MenuButton fx:id="typeMenu" layoutX="80.0" layoutY="293.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Type" AnchorPane.leftAnchor="80.0">
+        <items>
+          <MenuItem fx:id="licenseItem" mnemonicParsing="false" onAction="#selectLicenseFunc" text="Licence" />
+          <MenuItem fx:id="vehicleItem" mnemonicParsing="false" onAction="#selectVehicleFunc" text="Vehicle" />
+        </items>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuButton>
+      <Button fx:id="saveButton" layoutX="260.0" layoutY="293.0" mnemonicParsing="false" onAction="#saveFunc" prefHeight="25.0" prefWidth="80.0" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="closeButton" layoutX="438.0" layoutY="293.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

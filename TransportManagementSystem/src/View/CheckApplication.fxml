@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CheckApplicationController">
+    <children>
+        <Label layoutX="221.0" layoutY="29.0" text="Check Application">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="115.0" text="Application No:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="157.0" text="NID:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="276.0" text="Type:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="applicationNoText" layoutX="201.0" layoutY="113.0" prefHeight="25.0" prefWidth="312.0" AnchorPane.leftAnchor="201.0" />
+        <TextField fx:id="NIDText" layoutX="201.0" layoutY="155.0" prefHeight="25.0" prefWidth="312.0" AnchorPane.leftAnchor="201.0" />
+        <TextField fx:id="typeText" layoutX="201.0" layoutY="274.0" prefHeight="25.0" prefWidth="312.0" AnchorPane.leftAnchor="201.0" />
+        <Label layoutX="80.0" layoutY="197.0" text="Exam Date:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="examDatePicker" layoutX="201.0" layoutY="195.0" prefHeight="25.0" prefWidth="312.0" AnchorPane.leftAnchor="201.0" />
+        <TextField fx:id="divIDText" layoutX="201.0" layoutY="234.0" prefHeight="25.0" prefWidth="312.0" AnchorPane.leftAnchor="201.0" />
+        <Label layoutX="80.0" layoutY="236.0" text="Div ID:" AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="passButton" layoutX="201.0" layoutY="339.0" mnemonicParsing="false" onAction="#passFunc" prefHeight="25.0" prefWidth="80.0" text="Pass" AnchorPane.leftAnchor="201.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="closeButton" layoutX="433.0" layoutY="339.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Button fx:id="failButton" layoutX="317.0" layoutY="339.0" mnemonicParsing="false" onAction="#failFunc" prefHeight="25.0" prefWidth="80.0" text="Fail">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="nextButton" layoutX="77.0" layoutY="339.0" mnemonicParsing="false" onAction="#nextFunc" prefHeight="25.0" prefWidth="80.0" text="Next">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+
+</AnchorPane>

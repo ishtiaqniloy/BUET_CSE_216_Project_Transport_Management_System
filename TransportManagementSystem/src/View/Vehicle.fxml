@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VehicleController">
+    <children>
+        <Label layoutX="637.0" layoutY="23.0" text="Vehicles" textAlignment="CENTER" AnchorPane.topAnchor="10.0">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="insertButton" alignment="CENTER" contentDisplay="CENTER" layoutX="454.0" layoutY="69.0" minWidth="175.0" mnemonicParsing="false" onAction="#insertFunc" text="Insert New Vehicle" textAlignment="CENTER" AnchorPane.leftAnchor="430.0" AnchorPane.topAnchor="60.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="updateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="733.0" layoutY="60.0" minWidth="175.0" mnemonicParsing="false" onAction="#updateFunc" text="Update Vehicle Info" textAlignment="CENTER" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="60.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <TableView fx:id="vehicleTable" layoutX="14.0" layoutY="177.0" maxWidth="1356.0" prefHeight="456.0" prefWidth="1356.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+        <Button fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1130.0" layoutY="85.0" minWidth="175.0" mnemonicParsing="false" onAction="#backFunc" text="Home" textAlignment="CENTER" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="60.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <Button fx:id="searchByRegNoButton" alignment="CENTER" contentDisplay="CENTER" layoutX="736.0" layoutY="77.0" minWidth="175.0" mnemonicParsing="false" onAction="#searchByRegNoFunc" text="Search by Reg No" textAlignment="CENTER" AnchorPane.leftAnchor="430.0" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="allButton" alignment="CENTER" contentDisplay="CENTER" layoutX="112.0" layoutY="64.0" minWidth="175.0" mnemonicParsing="false" onAction="#allFunc" text="All Vehicles" textAlignment="CENTER" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="60.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchByTypeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="746.0" layoutY="87.0" minWidth="175.0" mnemonicParsing="false" onAction="#searchByTypeFunc" text="Search by Type" textAlignment="CENTER" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchByModelButton" alignment="CENTER" contentDisplay="CENTER" layoutX="756.0" layoutY="97.0" minWidth="175.0" mnemonicParsing="false" onAction="#searchByModelFunc" text="Search by Model" textAlignment="CENTER" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchField" layoutX="146.0" layoutY="127.0" minHeight="39.0" minWidth="175.0" AnchorPane.leftAnchor="133.0" />
+    </children>
+
+</AnchorPane>

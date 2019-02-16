@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdatePenaltyController">
+
+    <children>
+        <Label layoutX="221.0" layoutY="28.0" text="Update Penalty">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="136.0" text="PID : " AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="176.0" text="Section: " AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="260.0" text="Fine: " AnchorPane.leftAnchor="80.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="pidText" layoutX="160.0" layoutY="134.0" prefHeight="25.0" prefWidth="256.0" AnchorPane.leftAnchor="160.0" />
+        <Button fx:id="findButton" layoutX="438.0" layoutY="134.0" mnemonicParsing="false" onAction="#findFunc" prefHeight="25.0" prefWidth="80.0" text="Find" AnchorPane.rightAnchor="80.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Label layoutX="80.0" layoutY="221.0" text="Name: " AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sectionText" disable="true" editable="false" layoutX="160.0" layoutY="174.0" prefHeight="25.0" prefWidth="358.0" />
+      <TextField fx:id="nameText" disable="true" editable="false" layoutX="160.0" layoutY="219.0" prefHeight="25.0" prefWidth="358.0" />
+      <TextField fx:id="fineText" disable="true" editable="false" layoutX="160.0" layoutY="258.0" prefHeight="25.0" prefWidth="358.0" />
+      <Button fx:id="saveButton" layoutX="160.0" layoutY="338.0" mnemonicParsing="false" onAction="#saveFunc" prefHeight="25.0" prefWidth="80.0" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="closeButton" layoutX="440.0" layoutY="338.0" mnemonicParsing="false" onAction="#closeFunc" prefHeight="25.0" prefWidth="80.0" text="Close">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+
+</AnchorPane>

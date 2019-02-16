@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AboutController">
+    <children>
+        <Label layoutX="625.0" layoutY="23.0" text="About Us" textAlignment="CENTER">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1118.0" layoutY="633.0" minWidth="175.0" mnemonicParsing="false" onAction="#backFunc" text="Home" textAlignment="CENTER" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="633.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <HBox layoutX="7.0" layoutY="108.0" prefHeight="504.0" prefWidth="1366.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <VBox prefHeight="504.0" prefWidth="683.0">
+               <children>
+                  <TextArea editable="false" prefHeight="252.0" prefWidth="683.0" text="Abdullah Al Ishtiaq&#10;1505080&#10;Department of Computer Science and Engineering&#10;Bangladesh University of Engineering and Technology&#10;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea editable="false" prefHeight="252.0" prefWidth="683.0" text="Shashata Sawmya&#10;1505089&#10;Department of Computer Science and Engineering&#10;Bangladesh University of Engineering and Technology&#10;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </VBox>
+            <ImageView fx:id="aboutImageView" fitHeight="504.0" fitWidth="683.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+    </children>
+
+</AnchorPane>

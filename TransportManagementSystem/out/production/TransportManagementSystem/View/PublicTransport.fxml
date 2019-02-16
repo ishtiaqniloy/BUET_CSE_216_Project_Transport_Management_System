@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PublicTransportController">
+
+    <children>
+        <Label layoutX="541.0" layoutY="18.0" text="Public Transports" textAlignment="CENTER">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="insertButton" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="94.0" minWidth="175.0" mnemonicParsing="false" onAction="#insertFunc" text="Insert " textAlignment="CENTER" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="85.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="updateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="577.0" layoutY="77.0" minWidth="175.0" mnemonicParsing="false" onAction="#updateFunc" text="Update" textAlignment="CENTER" AnchorPane.leftAnchor="577.0" AnchorPane.topAnchor="85.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <TableView fx:id="publicTransportTable" layoutX="14.0" layoutY="177.0" maxWidth="1356.0" prefHeight="540.0" prefWidth="1360.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+        <Button fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1130.0" layoutY="85.0" minWidth="175.0" mnemonicParsing="false" onAction="#backFunc" text="Home" textAlignment="CENTER" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="85.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+
+</AnchorPane>

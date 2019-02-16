@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DriverController">
+
+    <children>
+        <Label layoutX="634.0" layoutY="3.0" text="Drivers" textAlignment="CENTER">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="updateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="814.0" layoutY="54.0" minWidth="175.0" mnemonicParsing="false" onAction="#updateFunc" text="Update Driver Info" textAlignment="CENTER" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="60.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <TableView fx:id="driverTable" layoutX="14.0" layoutY="177.0" maxWidth="1356.0" prefHeight="520.0" prefWidth="1356.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+        <Button fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1136.0" layoutY="60.0" minWidth="175.0" mnemonicParsing="false" onAction="#backFunc" text="Home" textAlignment="CENTER" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="60.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <Button fx:id="allButton" alignment="CENTER" contentDisplay="CENTER" layoutX="67.0" layoutY="69.0" minWidth="175.0" mnemonicParsing="false" onAction="#allFunc" text="All Drivers" textAlignment="CENTER" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="60.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchByNameButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1090.0" layoutY="113.0" minWidth="175.0" mnemonicParsing="false" onAction="#searchByNameFunc" text="Search by Name" textAlignment="CENTER" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchByNIDButton" alignment="CENTER" contentDisplay="CENTER" layoutX="575.0" layoutY="60.0" minWidth="175.0" mnemonicParsing="false" onAction="#searchByNIDFunc" text="Search by NID" textAlignment="CENTER" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="120.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchField" layoutX="260.0" layoutY="68.0" minHeight="39.0" prefHeight="39.0" prefWidth="459.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="120.0" />
+      <Button fx:id="newApplicantsButton" alignment="CENTER" contentDisplay="CENTER" layoutX="425.0" layoutY="58.0" minWidth="175.0" mnemonicParsing="false" onAction="#newApplicantsFunc" text="New Applicants" textAlignment="CENTER" AnchorPane.leftAnchor="430.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
