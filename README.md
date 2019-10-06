@@ -1,4 +1,4 @@
-# CSE_216_Project_TransportManagementSystem
+# BUET_CSE_216_Project_Transport_Management_System
 CSE 216 Database project using JavaFX and Oracle.
 
 In this project, we have implemented the database and admin module of a transport authority. Publicly available user module is not integrated in this repository yet.
